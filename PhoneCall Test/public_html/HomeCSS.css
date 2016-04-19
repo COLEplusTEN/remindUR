@@ -1,0 +1,75 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 18, 2016, 10:10:18 PM
+    Author     : Hari
+*/
+* { box-sizing:border-box; }
+body{
+  background: url(back.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.container      { 
+   
+    position:absolute;
+  font-family:'Gotham';
+  width:600px; 
+  margin:30px auto 0; 
+  display:block; 
+  padding:10px 50px 50px;
+}
+input:focus ~ label, input:valid ~ label        {
+  top:-20px;
+  font-size:14px;
+  color:white;
+}
+
+.highlight {
+  position:absolute;
+  height:60%; 
+  width:100px; 
+  top:10%; 
+  left:0;
+  pointer-events:none;
+opacity:0.5;
+}
+label                {
+  
+  font-size:18px;
+  font-weight:normal;
+  position:absolute;
+  pointer-events:none;
+  left:5px;
+  top:10px;
+  transition:0.2s ease all; 
+  -moz-transition:0.4s ease all; 
+  -webkit-transition:0.2s ease all;
+}
+
+.group            { 
+  position:relative; 
+  margin-bottom:100px; 
+}
+   
+input{
+  font-size:18px;
+  padding:10px 10px 10px 5px;
+  background: transparent;
+  width:300px;
+  border:none;
+  border-bottom:1px solid #757575;
+}
+input:focus ~ .highlight {
+  -webkit-animation:inputHighlighter 0.3s ease;
+  -moz-animation:inputHighlighter 0.3s ease;
+  animation:inputHighlighter 0.3s ease;
+}
+
+
+
